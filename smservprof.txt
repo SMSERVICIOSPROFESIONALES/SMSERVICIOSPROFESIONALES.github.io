@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios Contables y Administrativos Profesionales para Empresas y Emprendedores">
+    <meta name="author" content="SM Servicios Profesionales">
+    <title>SM Servicios Profesionales</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        nav .menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        nav .menu li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                        url('https://via.placeholder.com/1920x600?text=Contabilidad+Profesional') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .btn-primario {
+            background-color: #e67e22;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primario:hover {
+            background-color: #d35400;
+        }
+        .servicios {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+            text-align: center;
+        }
+        .servicios h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .servicio-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .servicio-item h3 {
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+        .sobre-nosotros {
+            background-color: #ecf0f1;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .testimonios {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+        .testimonios h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .testimonios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .testimonio-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .contacto .redes {
+            margin-top: 1rem;
+        }
+        .contacto .redes a {
+            margin: 0 0.5rem;
+            text-decoration: none;
+            color: #3498db;
+            font-size: 1.5rem;
+        }
+        .corporativa {
+            max-width: 1200px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+        .corporativa img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>SM Servicios Profesionales</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sobre-mi">Sobre Nosotros</a></li>
+                <li><a href="#testimonios">Otros Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Soluciones Contables y Administrativas a Tu Alcance</h1>
+            <p>Optimiza tus finanzas con servicios profesionales diseñados para vos.</p>
+            <a href="#contacto" class="btn-primario">Solicitar Consulta</a>
+        </div>
+    </section>
+
+    <!-- Imagen Corporativa -->
+    <section class="corporativa">
+        <img src="https://img.freepik.com/foto-gratis/cuaderno-espiral-blanco-lapiz-sobre-computadora-portatil-abierta-mesa-madera_23-2148038657.jpg?semt=ais_incoming">
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="servicios">
+        <h2>Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio-item">
+                <h3>Contabilidad General</h3>
+                <p> Elaboración de Estados Financieros, Declaraciones Impositivas (IVA, Ganancias, Monotributo), Auditorías Contables, Regularización de Situaciones Fiscales.</p>
+            </div>
+            <div class="servicio-item">
+                <h3>Asesoramiento Fiscal y Tributario</h3>
+                <p>Planeación Tributaria Estratégica, Defensa Fiscal y Atención a Requerimientos,  Inscripción y Seguimiento en ARCA y otros organismos.</p>
+            </div>
+            <div class="servicio-item">
+                <h3>Gestión Administrativa y Empresarial</h3>
+                <p>Planificación Financiera, Optimización de Procesos Administrativos, Análisis de Costos y Presupuestos, Consultoría en Gestión de Recursos.</p>
+            </div>
+            <div class="servicio-item">
+                <h3>Servicios para Emprendedores y Pymes</h3>
+                <p>Constitución de empresas, inscripciones en Monotributo y Regimen General, análisis de viabilidad económica y Capacitación para la Administración Financiera.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros" class="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos un equipo de experiencia ayudando a empresas y profesionales a gestionar sus finanzas y optimizar su desempeño. Ofrecemos servicios contables y administrativos personalizados para empresas y emprendedores. Nuestro objetivo es ayudarte a alcanzar tus metas financieras con soluciones claras y efectivas. Combinamos conocimientos técnicos, habilidades y estrategias  para ofrecer soluciones personalizadas que se adaptan a las necesidades únicas de cada cliente. Nuestro enfoque está orientado a resultados y a generar valor real en cada proyecto.</p>
+    </section>
+
+    <!-- Sección Servicios Destacados -->
+    <section id="servicios destacados" class="servicios destacados">
+        <h2>Servicios Destacados</h2>
+        <div class="Liquidaciones de Sueldos-grid">
+            <div class="Liquidaciones de Sueldos-item">
+                <p>Liquidaciones de Haberes y Cargas Sociales. Recibos de Sueldos.Registro de Servicio Doméstico y Recibos. </p>
+                <h4> Para que cumplas con el registro de tus empleados.</h4>
+            </div>
+            <div class="Gestión Monotributistas-item">
+                <p> Altas y Bajas de Monotributo - Facturación- Recategorizaciones- Trámites en Organismos Públicos</p>
+                <h4>Te ayudamos a regularizar tus impuestos de manera rápida y eficiente.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form action="mailto:smasesoramientointegral@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit" class="btn-primario">Enviar</button>
+        </form>
+
+        <div class="redes">
+            <a href="https://www.instagram.com/smasesoramientointegral" target="_blank">Instagram</a><div class="logo-container">
+<img src="C:\Users\Usuario\Documents\stefy\ESTUDIO\para pagina\logo insta pequeño.jpg" alt="Logo de Instagram" class="logo-pequeño">
+<style>
+.logo:hover {transform: scale(1.2)}
+</style> 
+</a>
+</div>
+            <a href="https://wa.me/2804369084" target="_blank">WhatsApp</a><div class="logo-container">
+<img src="C:\Users\Usuario\Documents\stefy\ESTUDIO\para pagina\logo w pequeño.jpg" alt="Logo" class="logo-pequeño">
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2025 SM Servicios Profesionales. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
